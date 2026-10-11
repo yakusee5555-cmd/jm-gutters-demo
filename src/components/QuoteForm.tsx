@@ -80,7 +80,7 @@ export default function QuoteForm() {
 
       <button
         type="submit"
-        className="btn-shine mt-5 flex min-h-[52px] w-full items-center justify-center rounded-full bg-forest px-8 text-center text-sm font-bold tracking-widest text-white transition-transform hover:scale-[1.02] active:scale-[0.99]"
+        className="btn-shine mt-5 flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#5B7A99] px-8 text-center text-sm font-bold tracking-widest text-white transition-transform hover:scale-[1.02] active:scale-[0.99]"
       >
         REQUEST MY FREE QUOTE
       </button>

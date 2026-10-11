@@ -276,7 +276,7 @@ export function Contact() {
               <textarea rows={4} placeholder="Tell us about the job (optional)" className="w-full rounded-xl border border-charcoal/15 bg-cream px-4 py-3.5 text-base text-charcoal placeholder:text-charcoal/40 focus:border-accent focus:outline-none" />
               <button
                 type="submit"
-                className="min-h-[52px] w-full rounded-full bg-forest py-4 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-forest-deep"
+                className="min-h-[52px] w-full rounded-full bg-[#5B7A99] py-4 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-[#47617d]"
               >
                 Send request
               </button>
