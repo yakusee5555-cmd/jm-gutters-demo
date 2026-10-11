@@ -21,7 +21,7 @@ export function Stacked() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 md:mt-14 lg:grid-cols-3">
+        <div className="snap-row mt-10 md:mt-14 md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           {SERVICE_CARDS.map((c, i) => (
             <article
               key={c.title}
@@ -305,7 +305,7 @@ function MowReveal({ children }: { children: React.ReactNode }) {
   return (
     <div ref={ref} className={`relative mt-8 overflow-hidden md:mt-12 ${cardsIn ? "mow-in" : ""}`}>
       {/* layer 1: pricing cards */}
-      <div className="relative z-[1] grid grid-cols-1 gap-5 md:grid-cols-3">{children}</div>
+      <div className="snap-row relative z-[1] md:grid md:grid-cols-3 md:gap-5">{children}</div>
       {/* layer 2: tinted overlay */}
       {!done && (
         <div ref={grassRef} className="absolute inset-0 z-[2]" style={{ clipPath: "inset(0 0 0 0)" }}>
@@ -468,7 +468,7 @@ export function Work() {
           </p>
         </div>
 
-        <div className="mt-8 columns-1 gap-5 sm:columns-2 md:mt-12 md:columns-3 [&>*]:mb-5">
+        <div className="work-row snap-row mt-8 md:mt-12 md:columns-3 [&>*]:mb-5">
           {WORK_SHOTS.map((s, i) => (
             <figure
               key={s.img + i}

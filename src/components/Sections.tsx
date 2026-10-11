@@ -157,7 +157,7 @@ export function Reviews() {
             </span>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-5 md:mt-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="snap-row mt-8 md:mt-12 md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-4">
           {REVIEWS.map((r, i) => (
             <figure
               key={r.name}

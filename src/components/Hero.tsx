@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <h1
             ref={markRef}
-            className="hero-title font-display font-black text-[#f4efe4] leading-none tracking-tight select-none text-[clamp(1.6rem,7vw,12rem)] will-change-transform [text-shadow:0_2px_60px_rgba(0,0,0,0.65)]"
+            className="hero-title font-display font-black text-[#f4efe4] leading-none tracking-tight select-none text-[clamp(2.75rem,12vw,12rem)] will-change-transform [text-shadow:0_2px_60px_rgba(0,0,0,0.65)]"
           >
             J&M GUTTERS
           </h1>
@@ -74,7 +74,7 @@ export default function Hero() {
       {/* CONTENT */}
       <div
         ref={contentRef}
-        className="relative z-20 flex flex-1 flex-col justify-between px-6 md:px-12 pt-28 pb-10"
+        className="relative z-20 flex flex-1 flex-col justify-between px-6 pt-24 pb-8 md:px-12 md:pt-28 md:pb-10"
       >
         <div className="hero-fade flex justify-end" style={{ animationDelay: "0.9s" }}>
           <p className="text-right text-[11px] md:text-xs font-bold tracking-[0.35em] text-white/95 leading-loose">
@@ -88,10 +88,10 @@ export default function Hero() {
               className="hero-fade text-center text-xs md:text-sm font-bold tracking-[0.5em] text-white lg:text-left"
               style={{ animationDelay: "1.1s" }}
             >
-              J&M GUTTERS GUTTER CO.
+              J&M GUTTER CO.
             </p>
             <div
-              className="hero-fade mt-8 flex flex-col gap-3 sm:flex-row"
+              className="hero-fade mt-6 flex flex-col gap-3 sm:flex-row md:mt-8"
               style={{ animationDelay: "1.2s" }}
             >
               <a
@@ -108,7 +108,9 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <QuoteForm />
+          <div className="hidden md:block">
+            <QuoteForm />
+          </div>
         </div>
       </div>
       <ScrollCue />
